@@ -26,7 +26,7 @@ def find_mismatch(text):
                     
     if len(opening_brackets_stack) != 0:
         return opening_brackets_stack[0].position
-    return "Sucess"
+    return "Success"
 
 
 def main():
