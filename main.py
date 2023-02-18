@@ -16,7 +16,7 @@ def find_mismatch(text):
      
                 opening_brackets_stack.append(Bracket(next, i + 1))
                 
-            elif next in "([{":
+            elif next in ")]}":
                 if len(opening_brackets_stack) == 0:
                     return i + 1
 
