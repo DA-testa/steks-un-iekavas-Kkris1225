@@ -23,16 +23,16 @@ def find_mismatch(text):
                 top = opening_brackets_stack.pop()
                 if not are_matching(top.char, next):
                     return i + 1
-
+                    
     if len(opening_brackets_stack) != 0:
         return opening_brackets_stack[0].position
-    return -1
+    return "Sucess"
 
 
 def main():
     text = input()
     mismatch = find_mismatch(text)
-    if mismatch == -1:
+    if mismatch == "Success":
         print("Success")
     else:
         print(mismatch)
